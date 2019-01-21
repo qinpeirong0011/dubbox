@@ -13,21 +13,15 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package dubbo.spring.javaconfig;
-
-import com.alibaba.dubbo.demo.DemoJavaConfigAction;
-import org.springframework.context.annotation.Bean;
-import org.springframework.context.annotation.Configuration;
+package com.alibaba.dubbo.demo;
 
 /**
  * @author Jinkai.Ma
  */
-@Configuration
-public class DubboDemoActionConfig {
-
-    @Bean
-    public DemoJavaConfigAction demoAnnotationAction() {
-        return new DemoJavaConfigAction();
+public class DemoJavaConfigConsumer {
+    public static void main(String[] args) {
+        // add `javaconfig` to args
+        String[] customArgs = new String[]{"javaconfig"};
+        com.alibaba.dubbo.container.Main.main(customArgs);
     }
-
 }

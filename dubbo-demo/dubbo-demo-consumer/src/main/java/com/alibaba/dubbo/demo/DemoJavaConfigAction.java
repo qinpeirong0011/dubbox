@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.alibaba.dubbo.demo.consumer;
+package com.alibaba.dubbo.demo;
 
 import com.alibaba.dubbo.config.annotation.Reference;
 import com.alibaba.dubbo.demo.bid.*;

@@ -1,4 +1,4 @@
-package com.alibaba.dubbo.demo.consumer.startup;
+package com.alibaba.dubbo.demo.startup;
 
 import com.alibaba.dubbo.demo.hello.DemoResult;
 import com.alibaba.dubbo.demo.hello.DemoService;

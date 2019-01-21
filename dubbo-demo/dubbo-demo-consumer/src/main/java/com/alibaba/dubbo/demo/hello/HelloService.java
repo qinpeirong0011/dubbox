@@ -1,5 +1,5 @@
-/*
- * Copyright 2006-2014 handu.com.
+/**
+ * Copyright 1999-2014 dangdang.com.
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -13,21 +13,11 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package dubbo.spring.javaconfig;
-
-import com.alibaba.dubbo.demo.DemoJavaConfigAction;
-import org.springframework.context.annotation.Bean;
-import org.springframework.context.annotation.Configuration;
+package com.alibaba.dubbo.demo.hello;
 
 /**
- * @author Jinkai.Ma
+ * @author lishen
  */
-@Configuration
-public class DubboDemoActionConfig {
-
-    @Bean
-    public DemoJavaConfigAction demoAnnotationAction() {
-        return new DemoJavaConfigAction();
-    }
-
+public interface HelloService {
+    String hello(String name);
 }
